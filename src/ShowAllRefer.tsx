@@ -19,7 +19,7 @@ export default function ShowAllRefer() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/get/referrals")
+    fetch("https://accredian-backtend-task.onrender.com/api/get/referrals")
       .then((response) => response.json())
       .then((data) => {
         setReferrals(data);

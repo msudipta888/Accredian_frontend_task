@@ -38,7 +38,7 @@ const Refer = () => {
   const handleReferral = async () => {
    
       try {
-        const response = await axios.post("http://localhost:5000/api/post/referrals",{
+        const response = await axios.post("https://accredian-backtend-task.onrender.com/api/post/referrals",{
           referrerName: formData.referrerName,
           referrerEmail: formData.referrerEmail ,
           referredName:formData.refereedName ,
