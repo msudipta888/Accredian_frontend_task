@@ -36,7 +36,7 @@ const Refer = () => {
   ];
 
   const handleReferral = async () => {
-    console.log('refer')
+   
       try {
         const response = await axios.post("http://localhost:5000/api/post/referrals",{
           referrerName: formData.referrerName,
@@ -49,7 +49,7 @@ const Refer = () => {
         
         if (response.status===201) {
           setShow(true);
-          console.log('ok')
+        
           setShowModal(false);
           setFormStep(0);
         }else{
@@ -278,7 +278,7 @@ const Refer = () => {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                console.log('Form submitted:', formData);
+               
                 setShowModal(false);
                 setFormStep(0);
               }}
